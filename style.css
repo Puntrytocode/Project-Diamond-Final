@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black:#000;
+    --pink: #ffc0cb;
+    --yellow: #f6d365;
+    --mint: #c4faf8;
+    --pink-text:#f6a6ff;
+    --white:#fff;    
+}    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    transition: 0.5s;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.line {
+    margin: 0;
+    height: 10px;
+    max-width: 100%;
+    background-color:  #79c0c0 ;
+    
+}
+nav {
+    position: sticky;
+    top: 0;
+}
+
+/* -----Navigation Bar----- */
+nav {
+    background-color: #fff;
+    /* margin: 0 2rem; */
+    
+    .wrapper {
+        margin: 0 2rem;
+        position: relative;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu.show {
+            display: flex;
+        }
+        
+       .hamburger {
+        margin-right: 2rem;
+        margin-top: 10px;
+       }
+        .logo {
+            max-width: 100px;
+            width: 50px;
+            
+            /* border: 4px solid red; */
+            margin-left: 20px;
+            align-items: center;
+
+            img {
+                max-width: 100px;
+                width: 100px;
+                align-items: center;
+                border: none;
+                border-radius: 4010px;
+            }
+        }
+
+        ul {
+            margin-left: 2rem;
+        }
+        .menu {
+            display: flex;
+            list-style: none;
+            
+            li {
+                margin-left: 50px;
+                /* font-weight: 400; */
+                
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+
+            li:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+
+    /* .line {
+        margin: 0;
+        height: 10px;
+        max-width: 100%;
+        background-color:  var(--pink);
+    } */
+}
+@media screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+   
+    nav {
+        
+        .wrapper {
+            flex-direction: column;
+            align-items: start;
+            margin: 1rem 0;
+            height: auto;
+
+            .menu {
+                display: none;
+                flex-direction: column;
+
+                li {
+                    margin-left: 0;
+                    margin-top: 2rem;
+                    margin-right: 2rem;
+                    
+                }
+            }
+           
+        }
+    }
+}
+/* .expand {
+    animation: open 0.3s ease-in-out forwards;
+}
+@keyframes open {
+    0% {
+        transform: translateY(-100%);
+
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.collapse {
+    animation: close 0.3s ease-in-out forwards;
+}
+@keyframes close {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+} */
+/* -----Header----- */
+header{
+    height: 628px;
+    background: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    
+   
+   
+    .header {
+        .header-wrapper {
+            /* margin-top: 50px; */
+            text-shadow: 1px;
+            color: var(--black);
+            text-shadow: 
+            4px 4px 0px var(--white),
+            8px 8px 0px rgb(126, 216, 216);
+            display: flex;
+            justify-self: center;
+            text-align: center;
+
+            .title-box {
+                width: 900px;
+                margin-top: 50px;
+
+
+                h1 {
+                    font-size: clamp(2rem, 10vw, 6.25rem);
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: clamp(0.5rem, 10vw, 1.5rem);
+                    text-transform: capitalize;
+                }
+
+                .ลงทะเบียนปลอกคอ {
+                    background-color: var(--mint);
+                    color: var(--black);
+                    text-decoration: none;
+                    max-width: 320px;
+                    width: 100%;
+                    height: 65px;
+                    display: inline-flex;
+                    justify-content: center;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 5px;
+                    margin-top: 60px;
+                    align-items: center;
+                    text-shadow: none;
+                }
+                .ลงทะเบียนปลอกคอ:hover {
+                    max-width: 350px;
+                    height: 75px;
+                    width: 100%;
+                    display: inline-flex;
+
+                }
+            }
+        }
+    }
+}
+/* -----Our Product Section------ */
+
+.our-product {
+    background: url(https://thumbs.dreamstime.com/b/veterinarian-background-vector-seamless-pattern-silhouettes-veterinary-clinic-animals-pets-graphic-design-207796853.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    
+    .product-wrapper {
+        display: flex;
+        align-items: center;
+        height: 800px;
+
+        .product-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--black);
+            width: 100%;
+
+            .product-img {
+                border: 4px solid red;
+                height: 500px;
+                max-width: 580px;
+                width: 580px;
+                img {
+                    width: 100%;
+                }
+            }
+
+            .product-info {
+                max-width: 580px;
+                width: 100%;
+                padding: 1rem;
+
+                h2 {
+                    font-size: clamp(2rem, 10vw, 3.75rem);
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: clamp(2rem, 10vw, 1.5rem);
+                    margin-top: 2rem;
+                }
+                .product-btn {
+                    background-color: var(--yellow);
+                    color: var(--black);
+                    text-decoration: none;
+                    max-width: 320px;
+                    width: 100%;
+                    height: 65px;
+                    display: inline-flex;
+                    justify-content: center;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    margin-top: 60px;
+                    align-items: center
+                }
+                .product-btn:hover {
+                    max-width: 350px;
+                    height: 75px;
+                    width: 100%;
+                    display: inline-flex;
+                }
+            }
+        }
+
+    }
+    @media screen and (max-width: 800px) {
+        height: auto;
+
+        .product-wrapper {
+            height: auto;
+
+            .product-box {
+                padding: 3rem  0;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/* -----Our Doctor Section----- */
+
+.our-doc {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYNOBp5KHzfrB2XP_z7M9CfTtD4NIv_21INQ0tYlERWr80hETe6xJ9Lb_CxNst4ziYtA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    overflow: hidden;
+
+    .our-doc-title {
+        margin: 3rem 0;
+        text-align: center;
+
+        h2 {
+            font-size: clamp(2rem, 10vw, 3.875rem);
+            text-transform: uppercase;
+        }
+    }
+
+    .our-doc-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 3rem;
+
+        .our-doc-items {
+            text-align: center;
+            img {
+                width: 100%;
+                
+            }
+            h3 {
+                font-size: clamp(1rem, 10vw, 2rem);
+                margin: 1rem 0;
+            }
+            p {
+                font-size: clamp(1rem, 10vw, 1.25rem);
+            }  
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        height: auto;
+        padding: 3rem 0;
+        
+    }
+}
+
+/* -----Footer Section----- */
+
+footer {
+    height: 600px;
+    background-color: var(--black);
+
+    .footer-wrapper {
+        height: 600px;
+        display: flex;
+        align-items: center;
+
+        .footer-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            color:white;
+
+            .footer-grid-items {
+                margin: 1rem;
+
+                h4 {
+                    font-size: clamp(1rem, 10vw, 2rem);
+                    margin-bottom: 1rem;
+                    font-weight: 300;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    
+                }
+                ul {
+                    list-style: none;
+
+                    li {
+                        margin-top: 1rem;
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    ul {
+                        display: flex;
+
+                        li {
+                            margin-top: 1rem;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 800px) {
+        height: auto;
+        padding: 3rem 0;
+
+        .footer-wrapper {
+            height: auto;
+        }
+    }
+}
