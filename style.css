@@ -165,7 +165,7 @@ nav {
 /* -----Header----- */
 header{
     height: 628px;
-    background: url(wallpaper.jpg);
+    background: url(Headder.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: 0.5s;
@@ -229,7 +229,7 @@ header{
 /* -----Our Product Section------ */
 
 .our-product {
-    background: url(https://thumbs.dreamstime.com/b/veterinarian-background-vector-seamless-pattern-silhouettes-veterinary-clinic-animals-pets-graphic-design-207796853.jpg);
+    background: url(Section1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -310,7 +310,7 @@ header{
 /* -----Our Doctor Section----- */
 
 .our-doc {
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEYNOBp5KHzfrB2XP_z7M9CfTtD4NIv_21INQ0tYlERWr80hETe6xJ9Lb_CxNst4ziYtA&usqp=CAU);
+    background: url(Section2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
